@@ -10,3 +10,15 @@
 // Any additional imported files //
 @import "theme/theme";  // <--------- That's where you can add your own design. Thats your part!
 @import "theme/contact-form7"; // Contact Form 7 - Bootstrap 4 support
+
+// Our Variables and Mixins //
+@import "helpers/mixins";
+@import "helpers/variables";
+
+// Our SMACSS Styles //
+@import "smacss/base";
+@import "smacss/layout";
+@import "smacss/module";
+
+// Our Page Styles //
+@import "pages/home";

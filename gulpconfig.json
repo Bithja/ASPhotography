@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/asphotography",
+    "proxy": "http://asp.com:8888/",
     "notify": false
   },
   "browserSyncWatchFiles" : [

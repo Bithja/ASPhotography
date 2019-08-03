@@ -11,6 +11,8 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<?php if ( !is_page( 'Home' )): ?>
+
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
@@ -37,9 +39,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+<?php else: ?>
+
+<?php endif ?>
+
 <?php wp_footer(); ?>
+
 
 </body>
 
 </html>
-

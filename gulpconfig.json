@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "http://asp.com:8888/",
+    "proxy": "http://asp.com:8000/",
     "notify": false
   },
   "browserSyncWatchFiles" : [

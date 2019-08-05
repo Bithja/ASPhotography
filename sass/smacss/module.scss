@@ -1,8 +1,10 @@
+
+// button
 .button {
   color: #fff;
   font-weight: 600;
   background-color: rgba( $red, .5 );
-  font-size: 12px;
+  @include font-size(1.2);
   text-transform: uppercase;
   padding: 1em 2em;
   margin: 20px 0;
@@ -36,7 +38,7 @@
       &:before {
       content: "\27F5";
       color: white;
-      font-size: 50px;
+      @include font-size(5);
       }
   }
 
@@ -58,7 +60,7 @@
     }
 
     &__number {
-      font-size: 7em;
+      @include font-size(7);
       color: rgba(255, 255, 255, .7);
       grid-row-start: 3;
       grid-column-start: 12;

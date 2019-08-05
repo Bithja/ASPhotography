@@ -37,10 +37,10 @@
             <?php echo  $i; ?>
           </div>
           <div class="slider-item__caption">
-            <h3><?php echo $image_name; ?></h3>
+            <?php echo $image_name; ?>
           </div>
           <div class="slider-item__caption--diagonal">
-            <h3><?php echo $image_location; ?></h3>
+            <?php echo $image_location; ?>
           </div>
         </div>
         <?php $i++; ?>

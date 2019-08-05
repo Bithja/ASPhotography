@@ -25,7 +25,8 @@
       right: 10px;
 
       &:before {
-        content: "\27F6";
+        font-family : FontAwesome;
+        content:"\f054";
         color: white;
         font-size: 50px;
       }
@@ -36,7 +37,8 @@
       left: 10px;
 
       &:before {
-      content: "\27F5";
+      font-family : FontAwesome;
+      content:"\f053";
       color: white;
       @include font-size(5);
       }
@@ -45,9 +47,7 @@
 
 
   .slider-item {
-    display: grid !important;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(3,1fr);
+    display: flex !important;
     height: 100vh;
 
     &__bg {
@@ -62,24 +62,25 @@
     &__number {
       @include font-size(7);
       color: rgba(255, 255, 255, .7);
-      grid-row-start: 3;
-      grid-column-start: 12;
       line-height: 1em;
-      margin-top: auto;
+      bottom: 0;
+      position: absolute;
+      right: 10px;
     }
 
     &__caption {
-      grid-row-start: 3;
-      grid-column-start: 1;
-      grid-column-end: 8;
       margin-top: auto;
-      color: white;
-      padding-left: 5px;
+      left: 0;
+      color: #fff;
+      padding-left: 33px;
+      @include font-size(1.8);
 
       &--diagonal {
+        @include font-size(1.8);
+        color: #fff;
         position: absolute;
-        bottom: 93px;
-        transform: rotate(-90deg) translateY(-45px);
+        bottom: 60px;
+        transform: rotate(-90deg) translateY(-27px);
       }
     }
   }

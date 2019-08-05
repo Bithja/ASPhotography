@@ -4,13 +4,17 @@
 $main-font: 'Oswald', sans-serif;
 $body-font: 'Quattrocento Sans', sans-serif;
 
+// Transition
+$transition-main: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
+
 // Colors
 $colors: 		(
     "sky":      #A3BFD9,
-    "light":    #F2F2F2,
-    "mid":      #737373,
-    "dark":     #404040,
-    "darkest":  #262626,
+    "grey-light":    #F2F2F2,
+    "grey-mid":      #737373,
+    "grey-dark":     #404040,
+    "grey-darkest":  #262626,
 	"white": 	#FFF,
 	"black": 	#000,
 );
@@ -25,6 +29,11 @@ $colors: 		(
     }
 }
 
+$color__sky = map-get($colors, 'sky');
+$color__grey-light = map-get($colors, 'grey-light');
+$color__grey-mid = map-get($colors, 'grey-mid');
+$color__grey-dark = map-get($colors, 'grey-dark');
+$color__grey-darkest = map-get($colors, 'grey-darkest');
 
+// Transitions
 $transition-main: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-

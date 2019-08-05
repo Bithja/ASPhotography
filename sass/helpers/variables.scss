@@ -5,11 +5,25 @@ $main-font: 'Oswald', sans-serif;
 $body-font: 'Quattrocento Sans', sans-serif;
 
 // Colors
-$powder-blue: #4ABDAC;
-$cotton: #99CED4;
-$blush: #EEB6B7;
-$smoke: #6E7376;
+$colors: 		(
+    "sky":      #A3BFD9,
+    "light":    #F2F2F2,
+    "mid":      #737373,
+    "dark":     #404040,
+    "darkest":  #262626,
+	"white": 	#FFF,
+	"black": 	#000,
+);
 
-$red: #A60303;
+@each $key, $value in $colors {
+    .bg#{$key} {
+        background: $value;
+    }
 
-$transition-main: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+    .color#{$key} {
+        color: $value;
+    }
+}
+
+
+$transition-main: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);

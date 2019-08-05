@@ -9,7 +9,7 @@
  $container = get_theme_mod( 'understrap_container_type' );
  ?>
     <?php
-        get_template_part('components/flexible-content');
+        the_content();
     ?>
 
  <?php get_footer(); ?>

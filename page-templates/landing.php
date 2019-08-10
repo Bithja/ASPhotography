@@ -1,12 +1,9 @@
 <?php
 /**
  * Template Name: Landing
- *
- * @package understrap
  */
 
  get_header();
- $container = get_theme_mod( 'understrap_container_type' );
  ?>
 
    <?php
@@ -49,9 +46,7 @@
   </div>
 
   <div class="hp-cta">
-    <h1><?php echo $header ?></h1>
-    <h2><?php echo $subheader; ?></h2>
-    <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+    <a class="button--main" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
   </div>
 
 

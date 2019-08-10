@@ -28,11 +28,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+	<div id="wrapper-navbar" class="custom-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+		<div class="container-fluid fancy-header">
+			<div class="row">
+				<div class="col-4 d-flex">
+					<div class="fancy-header__line">
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+					</div>
+				</div>
+				<div class="col-4 fancy-header__content">
+					<h1 class="fancy-header__header">Andrea Seraphim</h1>
+					<h2 class="fancy-header__subheader">Street Photography</h2>
+				</div>
+				<div class="col-4 d-flex">
+					<div class="fancy-header__line">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-md bg-primary">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container-fluid" >
@@ -80,3 +96,5 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+
+	<?php get_template_part('hero'); ?>

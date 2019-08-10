@@ -15,27 +15,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="footer">
+	<div class="container" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+		<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
+			<div class="row">
 
-			<div class="col-md-12">
+				<div class="col-md-12">
 
-				<footer class="site-footer" id="colophon">
+					<footer class="site-footer" id="colophon">
 
-				<h4>This is a footer</h4>
+					<h4>This is a footer</h4>
 
-				</footer><!-- #colophon -->
+					</footer><!-- #colophon -->
 
-			</div><!--col end -->
+				</div><!--col end -->
 
-		</div><!-- row end -->
+			</div><!-- row end -->
 
-	</div><!-- container end -->
+		</div><!-- container end -->
 
-</div><!-- wrapper end -->
+	</div><!-- wrapper end -->
+</div>
+
 
 </div><!-- #page we need this extra closing tag here -->
 

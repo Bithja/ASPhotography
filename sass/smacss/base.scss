@@ -1,11 +1,11 @@
-body {background-color: grey;}
+
 
 html {
   font-size: 62.5%; /* Sets up the Base 10 stuff */
 }
 
 h1 {
-  font-family: $main-font;
+  font-family: $header-font;
   color: #fff;
   opacity:0.7;
   @include font-size(9);
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-family: $main-font;
+  font-family: $header-font;
   color: #fff;
   opacity:0.6;
   text-transform: uppercase;
@@ -24,14 +24,28 @@ h2 {
 }
 
 h3 {
-  font-family: $body-font;
-  font-size: 25px;
+  font-family: $header-font;
+  letter-spacing: 2px;
+  @include font-size(2.5);
+  text-transform: uppercase;
   line-height: 30px;
-  color: #fff;
+  font-weight: 600;
+  color: $color__grey-mid;
+  margin-bottom: 30px;
 }
 
 a,
 body,
 p {
   font-family: $body-font;
+  @include font-size(1.4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.txt-large p {
+  font-family: $body-font;
+  @include font-size(2.2);
 }

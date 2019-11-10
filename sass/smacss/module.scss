@@ -126,12 +126,9 @@
     margin: 0 auto;
 }
 
-  .nav-link {
-    color: $color__grey-mid;
-  }
 }
 
-.ihero--img {
+.hero--img {
   background-size: cover;
   background-position: center;
   box-shadow: inset 0px 0px 20px 35px #fff;
@@ -174,6 +171,9 @@
 }
 
 .gallery-list {
+  &__container {
+    padding: 0;
+  }
   &__img-container {
     height: 300px;
     margin-bottom: 20px;
@@ -266,6 +266,41 @@
 
   .menu-item {
     color: $color__grey-dark !important;
+  }
+
+  .header-nav {
+
+    &__logo {
+      background-color: $color__grey-dark;
+      padding: 10px 30px;
+      color: #fff;
+      font-family: $header-font;
+      @include font-size(3);
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    .navbar-nav {
+      a {
+        color: $color__grey-dark;
+        @include font-size(2);
+      }
+    }
+  }
+
+  .home {
+    .header-nav {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+    }
+
+    .navbar-nav {
+      a {
+        color: #fff;
+        @include font-size(2);
+      }
+    }
   }
 
   .fancy-header {

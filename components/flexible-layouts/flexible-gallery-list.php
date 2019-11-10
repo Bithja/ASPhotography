@@ -8,7 +8,7 @@ $args = array(
 ?>
 
 <section class="page-section gallery-list">
-  <div class="container">
+  <div class="container gallery-list__container">
     <div class="row justify-content-between">
       <?php if ( $the_query->have_posts() ): ?>
         <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>

@@ -116,6 +116,7 @@ $args = array(
 'rewrite' => array('slug' => 'gallery'),
 'has_archive' => true,
 'hierarchical' => false,
+'taxonomies' => array( 'category' ),
 );
 register_post_type('gallery', $args);
 }

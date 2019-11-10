@@ -47,5 +47,7 @@ p:last-child {
 
 .txt-large p {
   font-family: $body-font;
-  @include font-size(2.2);
+  @include font-size(2.7);
+  color: $color__grey-mid;
+  font-weight: 400;
 }

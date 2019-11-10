@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 				<div class="col-4 fancy-header__content">
-					<h1 class="fancy-header__header">Andrea Seraphim</h1>
+					<h1 class="fancy-header__header">A. Seraphim</h1>
 					<h2 class="fancy-header__subheader">Street Photography</h2>
 				</div>
 				<div class="col-4 d-flex">

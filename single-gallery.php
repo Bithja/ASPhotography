@@ -5,7 +5,7 @@
   <section class="page-section single-gallery">
     <div class="container">
       <div class="row">
-        <div class="col-8 offset-4 txt-large mb-70">
+        <div class="col-8 txt-large mb-70">
           <?php echo $intro; ?>
         </div>
       </div>

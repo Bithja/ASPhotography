@@ -16,7 +16,7 @@ h1 {
 
 h2 {
   font-family: $header-font;
-  color: #fff;
+  color: $color__grey-mid;
   opacity:0.6;
   text-transform: uppercase;
   @include font-size(3);

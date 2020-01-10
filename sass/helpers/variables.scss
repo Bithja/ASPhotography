@@ -15,8 +15,8 @@ $colors: 		(
     "grey-mid":      #737373,
     "grey-dark":     #404040,
     "grey-darkest":  #262626,
-	"white": 	#FFF,
-	"black": 	#000,
+  	"white": 	#FFF,
+  	"black": 	#000,
 );
 
 @each $key, $value in $colors {

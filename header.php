@@ -32,10 +32,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="header-nav">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
-					<div class="header-nav__logo">A. Seraphim</div>
+				<div class="col-md-4">
+					<a href="<?php echo home_url(); ?>">
+						<div class="header-nav__logo">A. Seraphim</div>
+					</a>
 				</div>
-				<div class="col-sm-8">
+				<div class="col-md-8 ">
 					<nav class="navbar navbar-expand-md bg-primary">
 
 					<?php if ( 'container' == $container ) : ?>
@@ -60,12 +62,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 									the_custom_logo();
 								} ?><!-- end custom logo -->
 
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
-							</button>
+							</button> -->
 
 							<!-- The WordPress Menu goes here -->
-							<?php wp_nav_menu(
+							<?php /* wp_nav_menu(
 								array(
 									'theme_location'  => 'primary',
 									'container_class' => 'collapse navbar-collapse',
@@ -73,6 +75,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 									'menu_class'      => 'navbar-nav ml-auto',
 									'fallback_cb'     => '',
 									'menu_id'         => 'main-menu',
+									'depth'           => 2,
+									'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+								)
+							); */ ?>
+							<?php wp_nav_menu(
+								array(
+									'theme_location'  => 'primary',
+									'container_class' => 'navbarHeader',
+									'container_id'    => 'navbarHeader',
+									'menu_class'      => 'navbar-header',
+									'fallback_cb'     => '',
+									'menu_id'         => 'header-menu',
 									'depth'           => 2,
 									'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 								)

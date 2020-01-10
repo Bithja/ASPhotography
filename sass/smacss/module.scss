@@ -132,6 +132,7 @@
   background-size: cover;
   background-position: center;
   box-shadow: inset 0px 0px 20px 35px #fff;
+  height: 80vh;
 
   h1 {
     margin: 100px 0 150px 0;
@@ -361,10 +362,46 @@
   }
 
 
+#navbarHeader {
+  margin-left: auto;
+  li {
+    text-decoration: none;
+    display: inline-block;
+
+    a {
+      color: $color__grey-dark;
+      @include font-size(1.8);
+    }
+  }
+}
+
 .footer {
   background-color: $color__sky;
   color: #fff;
-  padding: 100px 0;
+  padding: 50px 0;
+  margin-top: 2px;
+
+  #wrapper-footer {
+    max-width: 100%;
+  }
+
+  #navbarFooter {
+    li {
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    ul {
+      padding-left: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .nav-link {
+      color: $color__grey-dark;
+      @include font-size(1.8);
+    }
+  }
 }
 
 .page-id-2 {

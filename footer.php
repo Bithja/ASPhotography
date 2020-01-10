@@ -18,23 +18,38 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="footer">
 	<div class="container" id="wrapper-footer">
 
-		<div class="<?php echo esc_attr( $container ); ?>">
-
 			<div class="row">
 
 				<div class="col-md-12">
 
 					<footer class="site-footer" id="colophon">
 
-					<h4>This is a footer</h4>
+						<nav class="">
+
+
+
+
+								<!-- The WordPress Menu goes here -->
+								<?php wp_nav_menu(
+									array(
+										'theme_location'  => 'footer',
+										'container_class' => 'navbarFooter',
+										'container_id'    => 'navbarFooter',
+										'menu_class'      => 'navbar-footer',
+										'fallback_cb'     => '',
+										'menu_id'         => 'footer-menu',
+										'depth'           => 1,
+										'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+									)
+								); ?>
+
+						</nav><!-- .site-navigation -->
 
 					</footer><!-- #colophon -->
 
 				</div><!--col end -->
 
 			</div><!-- row end -->
-
-		</div><!-- container end -->
 
 	</div><!-- wrapper end -->
 </div>

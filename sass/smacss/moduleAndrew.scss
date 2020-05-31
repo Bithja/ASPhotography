@@ -4,19 +4,34 @@
     align-items:center;
     justify-content:center;
 
+    @media only screen and (max-width: 800px) {
+      display: block;
+    }
+
         .column {
             align-self:stretch;
             width:50%;
-            padding:10% 5%
+            padding:10% 5%;
+
+            @media only screen and (max-width: 800px) {
+              width: 100%;
+            }
+        }
+
+        .bgcover  {
+          min-height: 300px;
         }
 
 }
 
 
 .wpcf7 {
+  max-width: 100%;
     form {
         label {
             font-size:18px;
+            color: $color__grey-mid;
+            text-transform: uppercase;
         }
 
         input[type],
@@ -24,7 +39,7 @@
             display:inline-block;
             height:auto;
             border-radius:0;
-            border:2px solid rgba(0,0,0,0.2);
+            border:1px solid rgba(0,0,0,0.2);
             font-size:18px;
             padding:15px 15px;
 
@@ -35,24 +50,26 @@
         }
 
         input[type=submit] {
-            color:#fff;
-            border-color:rgba(0,0,0,0.5);
-            height:auto;
-            font-size:20px;
-            background-color:#a3bfd9;
-            line-height:1;
-            padding:15px;
-            text-transform:uppercase;
-            font-weight:bold;
-            border-width:2px;
-            transition:all 0.3s ease;
+          color: #fff;
+          font-weight: 600;
+          @include font-size(1.2);
+          text-transform: uppercase;
+          padding: 2em 6em;
+          margin: 20px 0;
+          display: inline-block;
+          transition: $transition-main;
+          text-decoration: none !important;
+          background-color: $color__sky;
+          border-radius: 100px;
+          width: auto;
+          border: none;
+          margin: 0 auto;
+          display: flex;
 
             &:hover,
             &:active {
-                background-color:white;
-                color:#a3bfd9;
-                border-color:#a3bfd9;
-                box-shadow: 0 0 2px 0.4rem #a3bfd9;
+              color: $color__sky !important;
+              background-color: $color__grey-darkest !important;
             }
         }
 

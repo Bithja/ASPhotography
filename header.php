@@ -30,18 +30,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 
 	<div class="header-nav">
-		<div class="container">
+		<div class="container header-nav__container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-sm-6">
 					<a href="<?php echo home_url(); ?>">
 						<div class="header-nav__logo">A. Seraphim</div>
 					</a>
 				</div>
-				<div class="col-md-8 ">
-					<nav class="navbar navbar-expand-md bg-primary">
+				<div class="col-sm-6">
+					<nav class="navbar navbar-expand-md bg-primary p-0">
 
 					<?php if ( 'container' == $container ) : ?>
-						<div class="container-fluid" >
+						<div class="container-fluid p-0" >
 					<?php endif; ?>
 
 								<!-- Your site title as branding in the menu -->
